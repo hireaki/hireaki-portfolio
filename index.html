@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X UA-compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hireaki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>  hireaki </div>
+        <div>
+            <ul class="nav-links">
+               <li><a href="#about">about</a></li> 
+               <li><a href="#experience">experience</a></li> 
+               <li><a href="#work">work</a></li> 
+               <li><a href="#contact">contact</a></li> 
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">hireaki</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+               <li><a href="#about" onclick="toggleMenu()">about</a></li> 
+               <li><a href="#experience" onclick="toggleMenu()">experience</a></li> 
+               <li><a href="#work" onclick="toggleMenu()">work</a></li> 
+               <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="hireaki profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello there, I'm</p>
+            <h1 class="title">hireaki</h1>
+            <p class="section__text__p2">Graphics Designer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/CV')">
+                
+                    My CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/github.png" 
+                alt="My Github"
+                class="icon" 
+                onclick="location.href='https://github.com/hireaki'"
+                />
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My Linkedin"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/'"
+                />
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
